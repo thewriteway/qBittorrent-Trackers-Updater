@@ -24,7 +24,7 @@ api_get_torrents=protocol+"://"+host+":"+port+"/api/v2/torrents/info"
 api_get_trackers=protocol+"://"+host+":"+port+"/api/v2/torrents/trackers"
 api_add_trackers=protocol+"://"+host+":"+port+"/api/v2/torrents/addTrackers"
 api_rem_trackers=protocol+"://"+host+":"+port+"/api/v2/torrents/removeTrackers"
-stable_trackers="https://newtrackon.com/api/stable"
+stable_trackers="https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt"
 
 parser=argparse.ArgumentParser(description="A very simple python script for qBittorrent which uses the WebUI API to automatically add new stable trackers (list downloaded from newtrackon.com) to existing torrents. Created by Red Squirrel (@redsquirrel87) - https://redsquirrel87.com")
 parser.add_argument("--ipv6",action='store_true',help="include ipv6 only trackers in the list downloaded from newtrackon.com")
@@ -128,4 +128,4 @@ else:
                         print ("ERROR!")
 print ("")
 print ("Procedure completed, bye bye!")
-                               
+
